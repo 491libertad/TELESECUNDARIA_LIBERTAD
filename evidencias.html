@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TELESECUNDARIA 491</title>
+    <link rel="icon" href="LOGOLIBERTAD.JPG">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="indexestyle.css">
+    <!-- Font Awesome para los iconos de redes sociales -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TELESECUNDARIA 491</title>
+    <link rel="icon" href="LOGOLIBERTAD.JPG">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="indexestyle.css">
+    <!-- Font Awesome para los iconos de redes sociales -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+
+
+    <style>
+  .text {
+            font-size: 50px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            color: white;
+            text-shadow: 0 0 5px rgba(255, 255, 255, 0.7), 0 0 10px rgba(255, 255, 255, 0.5), 0 0 15px rgba(0, 200, 255, 0.7);
+            text-align: center;
+        }
+
+
+
+        /* Centrado de contenido */
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        /* Estilo de oculto */
+        .oculto {
+            display: none;
+        }
+        /* Estilo del botón */
+        .boton {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #4285F4;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .boton:hover {
+            background-color: #3367D6;
+        }
+
+        
+        .text1 {
+            font-size: 30px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            color: rgba(0, 0, 0, 0.705);
+            text-align: center;
+            margin: 20px auto;
+            max-width: 800px;
+        }
+
+        .text2 {
+            font-size: 25px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            color: rgba(0, 0, 0, 0.705);
+            text-align: center;
+            margin: 20px auto;
+            max-width: 800px;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar bg-body-tertiary">
+        <div class="container-fluid">
+           <p class="text">Acceso a la Sala Privada de Google Drive</p>
+        </div>
+    </nav>
+
+    <div class="text2">
+        <p>Bienvenidos a la Sala Privada de Google Drive de la Telesecundaria 491, un espacio digital
+             exclusivo
+     para los docentes de nuestra institución. 
+    
+    Al centralizar la información en esta plataforma segura, buscamos mejorar la colaboración
+     entre el personal docente, permitiendo un acceso rápido y ordenado a todos los materiales de apoyo. 
+     Nuestro objetivo es fortalecer la calidad educativa y asegurar que cada docente tenga las herramientas 
+     necesarias para su labor.</p>
+
+    <p>Para tener acceso debe tener una contraseña.
+    </p>
+
+<!-- Campo de contraseña -->
+<div style="position: relative;">
+    <input type="password" id="password" placeholder="Ingrese la contraseña" style="padding-right: 60px;">
+    <span id="togglePassword" onclick="togglePasswordVisibility()" style="position: absolute; right: 10px; top: 50%; transform: translateY(-50%); cursor: pointer; color: blue;">
+        Mostrar
+    </span>
+</div>
+<br>
+<button class="boton" onclick="verificarContraseña()">Ingresar</button>
+
+<script>
+    function verificarContraseña() {
+        // Define la contraseña correcta
+        const contraseñaCorrecta = "2223";  // Reemplaza esto con tu contraseña
+
+        // Obtiene la contraseña ingresada
+        const contraseñaIngresada = document.getElementById("password").value;
+
+        // Verifica si la contraseña es correcta
+        if (contraseñaIngresada === contraseñaCorrecta) {
+            // Abre la carpeta de Google Drive en una nueva pestaña
+            window.open("https://drive.google.com/drive/folders/1fuH0Ytj1zgSo5OOSSoNTZdbvon_mzXw1?usp=drive_link", "_blank"); // Reemplaza "ID_DE_TU_CARPETA" con el ID de tu carpeta
+        } else {
+            alert("Contraseña incorrecta. Intente de nuevo.");
+        }
+    }
+
+    function togglePasswordVisibility() {
+        const passwordField = document.getElementById("password");
+        const toggleText = document.getElementById("togglePassword");
+        
+        if (passwordField.type === "password") {
+            passwordField.type = "text";
+            toggleText.textContent = "Ocultar";
+        } else {
+            passwordField.type = "password";
+            toggleText.textContent = "Mostrar";
+        }
+    }
+</script>
+</body>
+</html>

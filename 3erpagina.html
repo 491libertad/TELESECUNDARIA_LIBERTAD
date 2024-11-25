@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TELESECUNDARIA 491</title>
+    <link rel="icon" href="LOGOLIBERTAD.JPG">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="indexestyle.css">
+    <!-- Font Awesome para los iconos de redes sociales -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+    <style>
+        .text {
+            font-size: 50px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            color: white;
+            text-shadow: 0 0 5px rgba(255, 255, 255, 0.7), 0 0 10px rgba(255, 255, 255, 0.5), 0 0 15px rgba(0, 200, 255, 0.7);
+            text-align: center;
+        }
+
+        .contact-text {
+            font-size: 18px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            text-align: center;
+            margin: 20px auto;
+            max-width: 800px;
+        }
+
+        .tel {
+            color: red;
+        }
+
+        .footer-custom {
+            width: 100%;
+            background-color: #251e63;
+            color: #FFFFFF;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+        }
+
+        .footer-custom a {
+            color: #FFFFFF;
+        }
+
+        .footer-custom a:hover {
+            color: #695ece;
+        }
+
+        .custom-button {
+            padding: 10px 20px;
+            background-color: #007bff; /* Cambia este color para personalizarlo */
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .custom-button:hover {
+            background-color: #0056b3; /* Color al pasar el cursor */
+        }
+
+        .custom-image {
+            margin-top: 20px; /* Añade espacio debajo del botón */
+        }
+
+        .custom-image {
+            margin: 50px auto; /* Espacio alrededor de la imagen */
+            width: 110%; /* Ajusta el tamaño de la imagen */
+            height: auto; /* Mantiene la proporción de la imagen */
+            display: block; /* Centra la imagen */
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar bg-body-tertiary">
+        <div class="container-fluid">
+            <p class="text">RESEÑAS</p>
+        </div>
+    </nav>
+
+    <div class="contact-text">
+        <p>"En la Telesecundaria 491, estamos comprometidos con una educación de calidad. 
+            Para nuestra institución es de suma importancia que todos los alumnos así como los papás se lleven
+             una grata experiencia por lo que estamos dispuestos a recibir con placer las reseñas
+              para una mejor experiencia en nuestro instituto educativo".</p>
+        <br>
+        
+   <!-- Caja de texto para ingresar el mensaje -->
+<input type="text" id="mensaje" placeholder="Escribe tu mensaje aquí" style="width: 300px; padding: 10px; margin: 10px 0;">
+
+<!-- Botón para enviar el correo electrónico -->
+<button class="custom-button" onclick="enviarCorreo()">Enviar Correo</button>
+
+<script>
+    function enviarCorreo() {
+        // Obtener el mensaje ingresado en la caja de texto
+        var mensaje = document.getElementById('mensaje').value;
+        // URL para enviar el correo electrónico
+        window.location.href = 'mailto:11ETV0510C@seg-gto.gob.mx?subject=Solicitud%20de%20Información&body=' + encodeURIComponent(mensaje);
+    }
+</script>
+
+<img src="img3.jpg" class="custom-image" alt="Imagen">
+</body>
+
+</html>

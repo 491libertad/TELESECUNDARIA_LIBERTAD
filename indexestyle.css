@@ -1,0 +1,26 @@
+   /* Cambiar el color de fondo de la barra de navegación */
+   .navbar {
+    background-color: #181f83 !important; /* Cambia este color a lo que prefieras */
+  }
+
+  /* Cambiar el color del texto de los enlaces en la barra de navegación */
+  .navbar-nav .nav-link {
+    color: white; /* Cambia el color del texto */
+  }
+
+  /* Cambiar el color de los enlaces cuando se pasa el ratón por encima */
+  .navbar-nav .nav-link:hover {
+    color: #1848e7; /* Cambia el color al pasar el ratón */
+  }
+
+  .text{
+    color: #251e63;
+    font-size: 35px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+
+  }
+
+  
+
+  
